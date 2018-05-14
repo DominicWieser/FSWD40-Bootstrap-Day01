@@ -1,20 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<!-- important -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<meta charset="UTF-8">
-	<title>Basic | Exercise</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Advanced | Exercise</title>
+	<style type="text/css" media="screen">
+		div.row:nth-of-type(1){
+			background-color: red;
+			padding: 5px;
+		}
+		div.row:nth-of-type(2){
+			background-color: yellow;
+			padding: 5px;
+		}
+		div.row:nth-of-type(3){
+			background-color: gray;
+			padding: 5px;
+		}
+		div[class^="col-"], div[class*=" col-"] {
+			background-color: white;
+		}
+	</style>
 </head>
 <body>
-	<h1>Basic Exercise - Bootstrap Installation + CDN Installation</h1>
-	<ul>
-		<li>Create a HTML</li>
-		<li>Name it</li>
-		<li>Check it</li>
-	</ul>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium consectetur at, unde eum ea, obcaecati voluptates vitae culpa excepturi consequuntur illo blanditiis! Accusantium animi provident fugit error cum. Perspiciatis, vel.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium consectetur at, unde eum ea, obcaecati voluptates vitae culpa excepturi consequuntur illo blanditiis! Accusantium animi provident fugit error cum. Perspiciatis, vel.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium consectetur at, unde eum ea, obcaecati voluptates vitae culpa excepturi consequuntur illo blanditiis! Accusantium animi provident fugit error cum. Perspiciatis, vel.</p>
+	<div class="container">
+		<h1>Advanced Exercise - Offsetting columns</h1>
+		<div class="row">
+			<div class="col-lg-1">
+				<h2>1</h2>
+			</div>
+			<div class="col-lg-1 col-lg-offset-10">
+				<h2>2</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2">
+				<h2>1</h2>
+			</div>
+			<div class="col-lg-2 col-lg-offset-3">
+				<h2>2</h2>
+			</div>
+			<div class="col-lg-2 col-lg-offset-3">
+				<h2>3</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2">
+				<h2>1</h2>
+			</div>
+			<div class="col-lg-6">
+				<h2>2</h2>
+			</div>
+			<div class="col-lg-3 col-lg-offset-1">
+				<h2>3</h2>
+			</div>
+		</div>
+	</div>	
 </body>
 </html>
